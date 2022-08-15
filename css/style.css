@@ -1,0 +1,430 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+h3,
+h1 {
+  font-family: "Playfair Display", serif;
+}
+h2,
+p {
+  font-family: "Lato", sans-serif;
+}
+.diamond {
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: #d9bf8f;
+  position: relative;
+  top: -20px;
+}
+
+.diamond:after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #d9bf8f;
+}
+
+/* Small Header  */
+.smallHeader {
+  background-color: #f2f2f2;
+}
+.smallHeader .left {
+  padding: 4px 0px;
+}
+.smallHeader span {
+  font-size: 11px;
+}
+.smallHeader .right {
+  padding: 6px 0px 0px 63px;
+}
+.smallHeader .right li {
+  border-right: 1px solid rgba(0, 0, 0, 0.315);
+  padding: 0 20px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* header  */
+.header {
+  padding: 24px 0px;
+}
+.header li {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.header li:hover {
+  color: #f09d66;
+  cursor: pointer;
+}
+.header .social i {
+  padding: 9px 11px;
+  border: 2px solid #d9bf8f;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #d9bf8f;
+}
+.header .social i:hover {
+  cursor: pointer;
+  background-color: #f09d66;
+  color: white;
+}
+.header select {
+  background: black;
+  color: white;
+  padding: 8px 3px;
+}
+
+/* slider  */
+
+.slider {
+  background: url(../images/sliderOriginal.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 717px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.curveDiv {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 67px solid white;
+  top: 0;
+  left: 37%;
+}
+.borderOne {
+  border: 1px solid white;
+  padding: 6px;
+  width: 280px;
+}
+.borderTwo {
+  border: 1px solid rgba(255, 255, 255, 0.671);
+  padding: 22px;
+}
+.innerDiv {
+  padding: 0px 50px;
+  width: 100%;
+  height: 450px;
+}
+.slider a {
+  text-decoration: none;
+  width: auto;
+  color: white;
+  background: #f09d66;
+  padding: 10px 28px;
+  font-size: 26px;
+}
+
+.slider a:hover {
+  cursor: pointer;
+  background: #f58840;
+}
+.innerDiv .sale {
+  font-size: 58px;
+}
+
+.indicaters li {
+  padding: 8px;
+  background: white;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.indicaters li:hover {
+  background: #f58840;
+  cursor: pointer;
+}
+/* Support  */
+
+.support .support1 {
+  /* background: url(../images/freeShipping.png); */
+  background-color: #d9bf8f;
+  padding: 17px 1px;
+  position: relative;
+}
+
+.support1 .support1Triangle {
+  position: absolute;
+  right: -111px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-top: 58px solid transparent;
+  border-right: 0px solid blue;
+  border-bottom: 45px solid transparent;
+  border-left: 88px solid #d9bf8f;
+  z-index: 5;
+}
+
+.support2 {
+  /* background: url(../images/30Return.png); */
+  background-color: #d9bf8f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 17px 1px;
+}
+.support2 .support1Triangle {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-top: 58px solid transparent;
+  border-right: 0px solid blue;
+  border-bottom: 45px solid transparent;
+  border-left: 88px solid white;
+  z-index: 2;
+}
+.support2 .support3Triangle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 51px solid transparent;
+  border-right: 80px solid white;
+  border-bottom: 52px solid transparent;
+}
+
+.support3 {
+  /* background: url(../images/support.png); */
+  background-color: #d9bf8f;
+  width: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 17px 1px;
+}
+.support3 h2,
+.support3 h5 {
+  font-size: 26px;
+}
+.support3 .support3Triangle {
+  position: absolute;
+  left: -102px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 51px solid transparent;
+  border-right: 80px solid #d9bf8f;
+  border-bottom: 52px solid transparent;
+}
+
+.support i {
+  font-size: 29px;
+}
+
+/* Hand picked Boxes  */
+.box {
+  position: relative;
+}
+.box .a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.box .a {
+  height: auto;
+}
+.box .a .overlay {
+  position: absolute;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+
+  padding: 16px 39px 10px 19px;
+}
+.box .a .overlay .overlayInner {
+  background: #0000007a;
+  height: 100%;
+  padding-top: 206px;
+}
+
+.box .a .overlay .overlayInner i {
+  font-size: 82px;
+  font-weight: lighter;
+  color: #d9bf8f;
+}
+.box .a .overlay .overlayInner a {
+  background: #f0975c;
+  padding: 6px 15px;
+  margin-bottom: 10px;
+}
+.box img {
+  width: 100%;
+}
+
+.box .overlay .overlayBorder {
+  border: 4px solid white;
+  height: 380px;
+}
+.longPic {
+  height: 122vh;
+}
+
+/* collection  */
+
+.collectionOverlay {
+  border-bottom: 40px solid #000000;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 191px;
+  line-height: 40px;
+}
+.collectionOverlay:hover {
+  border-bottom: 40px solid #f0975c;
+  color: white;
+}
+.collectionOverlay a {
+  font-size: 20px;
+}
+.collectionCircle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #feab12;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+}
+
+.collectionBox:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+/* brand  */
+
+.brand img {
+  object-fit: cover;
+}
+.brand h3 {
+  padding: 9px 0px;
+  letter-spacing: 2px;
+}
+/* Customers Says  */
+
+.customerBack {
+  background: url(../images/customerBack.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Big Footer  */
+
+.container-fluid.bigFooter {
+  background-color: #141414;
+  color: white;
+  padding: 0 0;
+}
+.bigFooter h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.bigFooter i {
+  padding: 12px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  font-size: 21px;
+  margin-right: 9px;
+  margin: 20px 9px;
+}
+.bigFooter i:hover {
+  cursor: pointer;
+  background-color: #f09d66;
+  color: white;
+}
+.bigFooter .formDiv input {
+  background: none;
+  border: none;
+  width: 65%;
+}
+.bigFooter .formDiv button {
+  background: #323030;
+  color: white;
+  border: none;
+  padding: 6px 13px;
+  width: 30%;
+}
+.bigFooter ul li {
+  margin-bottom: 10px;
+}
+.bigFooter h2 {
+  margin-bottom: 59px;
+}
+
+/* Media Query For Medium Screnn  */
+
+@media all and (max-width: 670px) {
+  /* Hand picked Boxes  */
+
+  .box .a .overlay .overlayInner {
+    padding-top: 302px;
+  }
+  .box .overlay .overlayBorder {
+    height: 300px;
+  }
+  .longPic {
+    height: 60vh;
+  }
+}
+
+/* Media Query For Small Screen  */
+
+@media all and (max-width: 516px) {
+  /* Small Header  */
+
+  .smallHeader {
+    display: none;
+  }
+
+  /* header */
+
+  /* Hand picked Boxes  */
+
+  .box .a .overlay .overlayInner {
+    padding-top: 120px;
+  }
+  .box .overlay .overlayBorder {
+    height: 300px;
+  }
+
+  /* big Footer  */
+  .bigFooter .formDiv input {
+    width: 60%;
+  }
+  .bigFooter .formDiv button {
+    background: #323030;
+    color: white;
+    border: none;
+    padding: 6px 13px;
+    width: 38%;
+  }
+}
